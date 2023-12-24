@@ -1,0 +1,4 @@
+{
+    "pattern":  "^(master|develop|release|test)$|^(docs|ci|chore|perf|refactor|test|style|feat|fix|build|(bug|hot)?fix)/.+$|^sprint-.+$",
+    "errorMsg": "Your branch name does not match the required pattern. You can rename It with: `git branch -m <current-name> <new-name>`'"
+  }
