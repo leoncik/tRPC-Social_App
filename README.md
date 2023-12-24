@@ -10,8 +10,13 @@
 
 #### Commits
 
-If you want to use Visual Studio Code as your git message editor, use the following command:
+A commit linter [commitlint](https://commitlint.js.org/#/) has been set up to enforce an homogenous commit structure on the repository. The structure complies to the [conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) convention.
 
+For more convenience, [commitizen](https://commitizen-tools.github.io/commitizen/) has been set up to help you writing your commit messages. If you want to use this tool, simply use `pnpm cm` instead of `git commit` and follow the prompt in your terminal.
+
+Alternatively, if you are using Visual Studio Code, you can use the [commitlint](https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint) extension to write your commit messages.
+
+Note: if you want to use Visual Studio Code as your git message editor, use the following command to set Visual Studio Code as your default editor:
 
 ```sh
 git config --global core.editor "code --wait"
