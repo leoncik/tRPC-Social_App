@@ -27,5 +27,3 @@ git config --global core.editor "code --wait"
 ```
 
 The "--wait" flags prevents the following error: "Aborting commit due to empty commit message.".
-
-Onverra demain comment personnaliser commitizen pour suivre ma propre convention...
