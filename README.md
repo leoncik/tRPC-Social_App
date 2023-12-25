@@ -1,7 +1,5 @@
 # tRPC Social App
 
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
 ## How to use
 
 ### Installation
@@ -16,9 +14,7 @@ A commit linter [commitlint](https://commitlint.js.org/#/) has been set up to en
 feat(client): add an email validator (#53)
 ```
 
-For more convenience, [commitizen](https://commitizen.github.io/cz-cli/) has been set up to help you writing your commit messages. If you want to use this tool, simply use `pnpm cm` instead of `git commit` and follow the prompt in your terminal.
-
-Alternatively, if you are using Visual Studio Code, you can use the [commitlint](https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint) extension to write your commit messages.
+For more convenience, if you are using Visual Studio Code, you can use the [commitlint](https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint) extension lint your commit messages while you are writing them.
 
 Note: if you want to use Visual Studio Code as your git message editor, use the following command to set Visual Studio Code as your default editor:
 
