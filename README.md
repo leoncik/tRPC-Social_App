@@ -1,5 +1,15 @@
 # tRPC Social App
 
+A full-stack app focusing on authentication (Keycloak) and best practices.
+
+## Table of contents
+
+- [How to use](#how-to-use)
+  - [Installation](#installation)
+  - [Develop on the project](#develop-on-the-project)
+    - [Branches](#branches)
+    - [Commits](#commits)
+
 ## How to use
 
 ### Installation
@@ -35,7 +45,7 @@ The client should be available at this address: http://127.0.0.1:5173/
 
 A branch name validator has been set up to enforce an homogenous structure on the repository. Branch name validation will be checked on each **push** to the repository. An example of valid branch name is:
 
-```sh
+```
 feat/#53/email-validator
 ```
 
@@ -43,7 +53,7 @@ feat/#53/email-validator
 
 A commit linter [commitlint](https://commitlint.js.org/#/) has been set up to enforce an homogenous commit structure on the repository. The structure complies to the [conventionnal commits](https://www.conventionalcommits.org/en/v1.0.0/) convention. Furthermore, we require you to add a reference to the issue/ticket that you are working on. For example, a good commit message should looks like this:
 
-```sh
+```
 feat(client): add an email validator (#53)
 ```
 
