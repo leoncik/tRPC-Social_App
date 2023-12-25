@@ -4,6 +4,31 @@
 
 ### Installation
 
+1. Get this repository's content by [direct download](https://github.com/leoncik/tRPC-Social-App/archive/refs/heads/master.zip) or by cloning It :
+
+```sh
+git clone https://github.com/leoncik/tRPC-Social-App.git
+```
+
+2. Make sure that [Node.js](https://nodejs.org/en/) is installed on your machine.
+
+3. Make sure that [pnpm](https://pnpm.io/) is installed on your machine. 
+
+4. install the dependencies :
+
+```sh
+pnpm install
+```
+
+5. Run the project:
+
+
+```sh
+pnpm dev
+```
+
+The client should be available at this address: http://127.0.0.1:5173/
+
 ### Develop on the project
 
 #### Commits
