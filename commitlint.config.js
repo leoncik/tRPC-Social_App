@@ -5,6 +5,6 @@ module.exports = {
     "header-max-length": [2, "always", 50],
     // Enforces to add a reference to a ticket or GitHub issue.
     'references-empty': [2, 'never'],
-
-  }
+  },
+  parserPreset: './parser-preset'
 }
