@@ -5,16 +5,13 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm -r --parallel --filter='./packages/*' run dev",
-    "test": "echo \"Error: no test specified\" && exit 0",
-    "prepare": "husky install",
-    "cm": "cz"
+    "prepare": "husky install"
   },
   "author": "leoncik",
   "license": "ISC",
   "devDependencies": {
     "@commitlint/cli": "^18.4.3",
     "@commitlint/config-conventional": "^18.4.3",
-    "commitizen": "^4.3.0",
     "husky": "^8.0.0",
     "validate-branch-name": "^1.3.0"
   }
