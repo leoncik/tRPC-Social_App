@@ -14,5 +14,9 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // Prevents the use of console.log.
+    'no-console': 'error',
+    // Prevents the use of TODO and other warning terms in comments.
+    'no-warning-comments': 'error'
   },
 }
