@@ -9,6 +9,7 @@ A full-stack app focusing on authentication (Keycloak) and best practices.
   - [Develop on the project](#develop-on-the-project)
     - [Branches](#branches)
     - [Commits](#commits)
+    - [Dependencies](#dependencies)
 
 ## How to use
 
@@ -66,3 +67,13 @@ git config --global core.editor "code --wait"
 ```
 
 The "--wait" flags prevents the following error: "Aborting commit due to empty commit message.".
+
+### Dependencies
+
+Dependencies should be added from the root of the project with [pnpm](https://pnpm.io/). You can add a dependency to a package with the following command:
+
+```sh
+pnpm add dependency-name --filter package-name
+```
+
+For example, if you want to add [TypeScript](https://www.typescriptlang.org/) as a *devDependency* to the *server* package, you should run this command: `pnpm add -D typescript --filter server`
