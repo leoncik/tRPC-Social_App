@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-pnpm --filter client lint:client
+pnpm --filter client lint-staged:client
 pnpm --filter server lint:server
