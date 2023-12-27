@@ -26,6 +26,7 @@
         "typescript": "^5.2.2"
     },
     "lint-staged": {
+        "*.ts": "eslint --quiet --fix",
         "*.{ts,js,md,json}": "prettier --write"
     }
 }
