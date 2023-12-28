@@ -4,13 +4,23 @@ A full-stack app focusing on authentication (Keycloak) and best practices.
 
 ## Table of contents
 
+- [Features](#features)
 - [How to use](#how-to-use)
   - [Installation](#installation)
   - [Develop on the project](#develop-on-the-project)
     - [Branches](#branches)
     - [Commits](#commits)
     - [Dependencies](#dependencies)
-- [Features](#features)
+
+## Features
+
+- [stylelint](https://stylelint.io/) for consistent CSS. Two stylelint configuration files were made: one to check the rules and prevent the commit if anything wrong was detected and another one to autofix the detected problems.
+  - Plugins used on autofix mode:
+    - [stylelint-config-idiomatic-order](https://www.npmjs.com/package/stylelint-config-idiomatic-order): ensure a consistent order in the CSS properties.
+    - [stylelint-color-format](https://github.com/filipekiss/stylelint-color-format): a stylelint plugin to convert HEX colors to either RGB or HSL formats. The HSL format was chosen for this project.
+  - Plugins used to prevent commit:
+    - [standard config](https://www.npmjs.com/package/stylelint-config-standard): used for the basic checks.
+    - [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties): disallow property values that are ignored due to another property value in the same rule.
 
 ## How to use
 
@@ -78,7 +88,3 @@ pnpm add dependency-name --filter package-name
 ```
 
 For example, if you want to add [TypeScript](https://www.typescriptlang.org/) as a *devDependency* to the *server* package, you should run this command: `pnpm add -D typescript --filter server`
-
-## Features
-
-- [stylelint](https://stylelint.io/) for consistent CSS. The [standard config](https://www.npmjs.com/package/stylelint-config-standard) was used for the basic checks and the [stylelint-config-idiomatic-order](https://www.npmjs.com/package/stylelint-config-idiomatic-order) was added to have a consistent order in the properties. Two stylelint configuration files were made: one to check the rules and prevent the commit if anything wrong was detected and another one to autofix the detected problems.
