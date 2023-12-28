@@ -39,8 +39,8 @@
         "*.{tsx,ts}": "eslint --cache --fix",
         "*.{ts,tsx,js,css,md,html,json}": "prettier --write",
         "*.css": [
-            "stylelint --config .stylelintrc.json",
-            "stylelint --config .stylelintrc-autofix.json --fix"
+            "stylelint --config .stylelintrc-autofix.json --fix",
+            "stylelint --config .stylelintrc.json"
         ]
     }
 }
