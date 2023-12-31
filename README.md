@@ -10,10 +10,15 @@ A full-stack app focusing on authentication (Keycloak) and best practices.
   - [Develop on the project](#develop-on-the-project)
     - [Branches](#branches)
     - [Commits](#commits)
-    - [Dependencies](#dependencies)
+  - [Dependencies](#dependencies)
 
 ## Features
 
+- [Prettier](https://prettier.io/) for consistent code formatting. The [prettier-plugin-sort-imports](https://github.com/trivago/prettier-plugin-sort-imports) was added to sort imports. They follow this order for the client part of the application:
+  - React-related imports (useState, react-dom etc.)
+  - Third-party packages
+  - Project alias imports
+  - Relative imports
 - [stylelint](https://stylelint.io/) for consistent CSS. Two stylelint configuration files were made: one to check the rules and prevent the commit if anything wrong was detected and another one to autofix the detected problems.
   - Plugins used on autofix mode:
     - [stylelint-config-idiomatic-order](https://www.npmjs.com/package/stylelint-config-idiomatic-order): ensure a consistent order in the CSS properties.
