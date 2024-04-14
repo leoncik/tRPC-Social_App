@@ -19,6 +19,7 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   plugins: ['react-refresh', 'sort-keys-fix'],
   rules: {
+    "react/jsx-sort-props": "warn",
      "sort-keys-fix/sort-keys-fix": "warn",
     "react/react-in-jsx-scope": "off",
     'react-refresh/only-export-components': [
