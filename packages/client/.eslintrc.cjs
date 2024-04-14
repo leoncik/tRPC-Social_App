@@ -6,6 +6,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     "plugin:postcss-modules/recommended",
+    "airbnb",
+    "airbnb/hooks",
     'prettier',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
