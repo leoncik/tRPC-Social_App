@@ -8,6 +8,7 @@
         "plugin:@typescript-eslint/recommended",
         "airbnb-base",
         "airbnb-typescript/base",
+        "plugin:typescript-sort-keys/recommended",
         "prettier"
     ],
     "parser": "@typescript-eslint/parser",
@@ -16,9 +17,10 @@
         "sourceType": "module",
         "project": "./tsconfig.json"
     },
-    "plugins": ["@typescript-eslint"],
+    "plugins": ["@typescript-eslint", "sort-keys-fix"],
     "rules": {
         "no-console": "error",
-        "no-warning-comments": "error"
+        "no-warning-comments": "error",
+        "sort-keys-fix/sort-keys-fix": "warn"
     }
 }
