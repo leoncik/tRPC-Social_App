@@ -26,6 +26,9 @@ A full-stack app focusing on authentication (Keycloak) and best practices.
   - Plugins used to prevent commit:
     - [standard config](https://www.npmjs.com/package/stylelint-config-standard): used for the basic checks.
     - [stylelint-declaration-block-no-ignored-properties](https://github.com/kristerkari/stylelint-declaration-block-no-ignored-properties): disallow property values that are ignored due to another property value in the same rule.
+- [ESLint](https://eslint.org/) to lint the code and also improve consistency by sorting imports, object keys and more.
+
+To see more about the added plugins, see: https://github.com/leoncik/tRPC-Social-App/issues/9
 
 ## How to use
 
@@ -76,13 +79,19 @@ feat(client): add an email validator (#53)
 
 For more convenience, if you are using Visual Studio Code, you can use the [commitlint](https://marketplace.visualstudio.com/items?itemName=joshbolduc.commitlint) extension lint your commit messages while you are writing them.
 
-Note: if you want to use Visual Studio Code as your git message editor, use the following command to set Visual Studio Code as your default editor:
+Note 1: if you want to use Visual Studio Code as your git message editor, use the following command to set Visual Studio Code as your default editor:
 
 ```sh
 git config --global core.editor "code --wait"
 ```
 
 The "--wait" flags prevents the following error: "Aborting commit due to empty commit message.".
+
+Note 2: If you ever need to bypass the pre-commit validator, use the `--no-verify` flag. For example:
+
+```sh
+git commit --no-verify"
+```
 
 ### Dependencies
 
