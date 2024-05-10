@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm test
+pnpm --filter client lint-staged:client
+pnpm --filter server lint:server
